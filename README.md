@@ -40,7 +40,7 @@ param = [d,buy_signal,sell_signal]
 :-------------------------:
  <img align="center" src="https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Images/cointegration.png" width="450" height="350" />  
  
- Map of p-values for pairwise cointegration. The statistical test for cointegration checks how likely the closing values of two stocks are mean reversive. The null hypothesis is no cointegration. Hence low p-values suggest that the stochastic processes under consideration show the property of being mean reversiv and can be described as Ornstein-Uhlenbeck processes. They are thus suitable to perform the pairs trading strategy. 
+ Map of p-values for pairwise cointegration. The statistical test for cointegration checks how likely the closing values of two stocks are mean reversive. The null hypothesis is no cointegration. Hence low p-values suggest that the stochastic processes under consideration show the property of being mean reversiv and can be described as an Ornstein-Uhlenbeck processes. They are thus suitable to perform the pairs trading strategy. 
  
 
 
