@@ -5,10 +5,10 @@
  
  Keywords: Stochastic differential equations, Ornstein-Ulenbeck Process, Pairs Trading, S&P500 
 
-### Work flow: 
-1.  Load stock data from [slib](https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/tree/master/Code) with stockvals(df,start_date,end_date) = names, symbols, variation, close_val, open_val.
-2.  Set parameters for: maximum pseudo likelihood parameter inference and generating MCMC simulation
-3.  Infere parameters from image with MPL: paramInference()
+### Work Flow & Manual: 
+1.  Load stock data from [slib.py](https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Code/slib.py) with **stockvals()**.
+2.  Determine two stocks suitable for the pairs trading strategy with **find_cointegrated_pairs()** in [CointHurst.py](https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Code/CointHurst.py). Note tha the output 'pairs' already suggest pairs of stocks with a significance level below 0.05 using a cointegration test. A full map of pvalues for pairwise cointegration can be displayed with **covplot()**.
+3.  Use **pairstrade()** in [PairsTrade.py](https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Code/PairsTrade.py) to execute the pairs trading strategy on the two stocks (id0, id1) under consideration. The parameters that determine the success of the strategy are defined in param: f8[d,buy_signal,sell_signal] - threshold parameters for the time window, buying and selling signal. 
 4.  Simulate with infered connectivity matrix: mcGenerator()
 
 
