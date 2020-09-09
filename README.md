@@ -2,7 +2,6 @@
  A model simulation shows how pairs trading could be used for two S&P500 traded stocks. It proofs that the strategy is successful on real data, which is downloaded via the
  [pandas-datareader](https://pandas-datareader.readthedocs.io/en/latest/). In the report and poster section a profound analysis about the pairs trading underlying Ornstein-Uhlenbeck process is done. Rigorous mathematical formulations can be found in this section also. 
  
- 
  Keywords: Stochastic differential equations, Ornstein-Ulenbeck Process, Pairs Trading, S&P500 
 
 ### Work Flow & Manual: 
@@ -15,7 +14,7 @@
  
   Cointegration  
 :-------------------------:
- <img align="center" src="https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Images/cointegration.png" width="450" height="450" />  
+ <img align="center" src="https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Images/cointegration.png" width="450" height="350" />  
  
 
 
@@ -40,6 +39,6 @@ With:
  [scikit-learn](https://scikit-learn.org/stable/), 
  [Numpy](https://numpy.org/),  
  [Matplotlib](https://matplotlib.org/), 
- [Pandas](https://pandas.pydata.org/), [pandas-datareader](https://pandas-datareader.readthedocs.io/en/latest/)
+ [Pandas](https://pandas.pydata.org/), [pandas-datareader](https://pandas-datareader.readthedocs.io/en/latest/),
  [slib (custom)](https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Code/slib.py)
  
