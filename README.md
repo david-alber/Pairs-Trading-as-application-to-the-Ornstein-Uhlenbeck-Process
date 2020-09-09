@@ -50,7 +50,8 @@ param = [d,buy_signal,sell_signal]
 :-------------------------:|:-------------------------:
  <img align="center" src="https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Images/buySell.png" width="400" height="320" />  |  <img src="https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Images/trade_performance.png" width="400" height="320" />
  
-
+Buying and selling signals for two suitable S&P500 stocks (Adobe Inc.-Cintas Corporation) over a time period of 10 years (2010-2020).
+The strategy started with 0 EUR, ended with 3000 EUR of hypothetical profit.
 
 
 
