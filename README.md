@@ -44,7 +44,7 @@ TT_dec = TT_enc #MPL decoding temperature
  
   Cointegration  
 :-------------------------:
- <img src="https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Images/cointegration.png" width="400" height="350" />  
+ <img align="center" src="https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Images/cointegration.png" width="400" height="350" />  
  
 Setting the parameter depiction to 'General', 'Grained', 'Detaild' processes the data to a pathological image with finer subdivision of different cell types.
 
@@ -52,7 +52,7 @@ Setting the parameter depiction to 'General', 'Grained', 'Detaild' processes the
  
   Buying-Selling Signal |   Trade Performance
 :-------------------------:|:-------------------------:
- <img src="https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Images/buySell.png" width="400" height="320" />  |  <img src="https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Images/trade_performance.png" width="400" height="320" />
+ <img align="center" src="https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Images/buySell.png" width="500" height="400" />  |  <img src="https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Images/trade_performance.png" width="400" height="320" />
  
 A tissue sample of the tumor environment of patient 4 (compartemntalized type) is analysed: The image data is used to infer a parameter set of inter cellular connectivities that most likely is responsible for guiding the pattern formation at hand. The infered parameterset is the imput for the tumor generating model, which simulates a tumor environment, according to the previous analysis of maximum pseudo likelihood inference.
 
