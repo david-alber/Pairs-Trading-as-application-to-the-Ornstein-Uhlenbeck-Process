@@ -8,9 +8,7 @@
 ### Work Flow & Manual: 
 1.  Load stock data from [slib.py](https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Code/slib.py) with **stockvals()**.
 2.  Determine two stocks suitable for the pairs trading strategy with **find_cointegrated_pairs()** in [CointHurst.py](https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Code/CointHurst.py). Note tha the output 'pairs' already suggest pairs of stocks with a significance level below 0.05 using a cointegration test. A full map of pvalues for pairwise cointegration can be displayed with **covplot()**.
-3.  Use **pairstrade()** in [PairsTrade.py](https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Code/PairsTrade.py) to execute the pairs trading strategy on the two stocks (id0, id1) under consideration. The parameters that determine the success of the strategy are defined in param: f8[d,buy_signal,sell_signal] - threshold parameters for the time window, buying and selling signal. 
-4.  Simulate with infered connectivity matrix: mcGenerator()
-
+3.  Use **pairstrade()** in [PairsTrade.py](https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Code/PairsTrade.py) to execute the pairs trading strategy on the two stocks (id0, id1) under consideration. The parameters that determine the success of the strategy are defined in the **pairstrade()** input *param: f8[d,buy_signal,sell_signal]* - threshold parameters for the time window, buying and selling signal. A graph that shows the buying and selling signal and how much money the strategy would have made can be displayed by setting *plot = 'True'*.
 
 ### Getting started
 
@@ -42,24 +40,22 @@ TT_enc = np.array([1.]); Tsteps = len(TT_enc) #MC Temperature
 TT_dec = TT_enc #MPL decoding temperature
 ```
 
-### Cell Type Depictions
+### Map of pairwise cointegrated stocks
  
-  General | Grained | Detailed  
-:-------------------------:|:-------------------------:|:-------------------------:
- <img src="https://github.com/david-alber/Parameter-Learning-In-Tumor-Environments/blob/master/Images/p12ComGeneral.png" width="400" height="350" />  |  <img src="https://github.com/david-alber/Parameter-Learning-In-Tumor-Environments/blob/master/Images/p12ComGrained.png" width="400" height="350" /> |  <img src="https://github.com/david-alber/Parameter-Learning-In-Tumor-Environments/blob/master/Images/p12ComDetailed.png" width="400" height="350" />  
+  Cointegration  
+:-------------------------:
+ <img src="https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Images/cointegration.png" width="400" height="350" />  
  
 Setting the parameter depiction to 'General', 'Grained', 'Detaild' processes the data to a pathological image with finer subdivision of different cell types.
 
-### Pathological Image - Simulated Configuration
+### Buying-Selling Signal & Trading Performance
  
-  Pathological Image |   Simulated Configuration
+  Buying-Selling Signal |   Trade Performance
 :-------------------------:|:-------------------------:
- <img src="https://github.com/david-alber/Parameter-Learning-In-Tumor-Environments/blob/master/Images/pathoP4General.png" width="400" height="320" />  |  <img src="https://github.com/david-alber/Parameter-Learning-In-Tumor-Environments/blob/master/Images/configP4General.png" width="400" height="320" />
+ <img src="https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Images/buySell.png" width="400" height="320" />  |  <img src="https://github.com/david-alber/Pairs-Trading-as-application-to-the-Ornstein-Uhlenbeck-Process/blob/master/Images/trade_performance.png" width="400" height="320" />
  
 A tissue sample of the tumor environment of patient 4 (compartemntalized type) is analysed: The image data is used to infer a parameter set of inter cellular connectivities that most likely is responsible for guiding the pattern formation at hand. The infered parameterset is the imput for the tumor generating model, which simulates a tumor environment, according to the previous analysis of maximum pseudo likelihood inference.
 
-### Comments
-For legal reasons the data files, which were used for the analysis and the simulations, cannot be shared publically. Please get in touch with me if you are interested in the data that drives the presented results.
 
 
 ### How to contribute
